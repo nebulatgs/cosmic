@@ -1,0 +1,17 @@
+[package]
+name = "cosmic"
+version = "0.1.0"
+edition = "2021"
+authors = ["Nebula <nebula@kora.gg>"]
+license = "MIT"
+description = "C/C++ build tool and package manager"
+readme = "README.md"
+homepage = "https://github.com/nebulatgs/cosmic"
+repository = "https://github.com/nebulatgs/cosmic"
+keywords = ["c", "c++", "build", "package", "cmake"]
+categories = ["command-line-utilities"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = { version = "3.1.8", features = ["derive"] }
