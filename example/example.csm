@@ -1,0 +1,23 @@
+package bin example_gl;
+
+meta {
+    authors: [ "Nebula<nebula@cosmic.rs>" ],
+    description: "Example Cosmic Definition for an OpenGL project",
+    license: "MIT"
+    cxx: true
+}
+
+define {
+    GLFW_BUILD_DOCS: false
+}
+
+compilers {
+    c: "clang",
+    cxx: "clang++"
+}
+
+depends(include, static) {
+    glfw,
+    glm,
+    glad
+}

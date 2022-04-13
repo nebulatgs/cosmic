@@ -1,0 +1,5 @@
+program = { package ~ char* }
+package = { "package" ~ ("bin" | "lib") ~ ident ~ ";" }
+
+ident = { SOI ~ char  ~ EOI }
+char = { ASCII_ALPHANUMERIC | "-" | "_" }
